@@ -46,7 +46,7 @@
         }
 
         .btn-incomplete {
-            background: orange;
+            background: red;
             color: white;
             padding: 5px 10px;
             border: none;
@@ -91,9 +91,9 @@
                 <form action="{% url 'complete' task.id %}" method="post">
                     {% csrf_token %}
                     {% if task.completed %}
-                        <button type="submit" class="btn-incomplete">Mark Incomplete</button>
+                        <button type="submit" class="btn-incomplete">Task Pending</button>
                     {% else %}
-                        <button type="submit" class="btn-complete">Mark Complete</button>
+                        <button type="submit" class="btn-complete">Task Completed</button>
                     {% endif %}
                 </form>
             </p>
