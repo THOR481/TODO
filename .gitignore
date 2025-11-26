@@ -1,12 +1,6 @@
-############################
-# PYTHON / DJANGO IGNORE
-############################
-
 # Byte-compiled / cache
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 *.log
 
 # Virtual environment
@@ -17,16 +11,6 @@ venv/
 
 # SQLite Database (Local Only)
 db.sqlite3
-
-# Django static files (collected)
-staticfiles/
-static/
-
-# Media uploads (if any)
-media/
-
-# Python egg files
-*.egg-info/
 
 # IDE settings
 .vscode/
